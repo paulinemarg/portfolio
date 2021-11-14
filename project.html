@@ -28,147 +28,126 @@
     </header>
 
 <!-- Project section start -->
-    <section>
-    <div class="project" id="project">
-        <div class="case-study" id="case1">
-            <h1>Case Study for myFlix Full-Stack Project</h1>
-            <a href="https://backend-myflix.herokuapp.com/documentation.html" target="_blank">
-            <img class="postman" src="images/postman-register.png" alt="postman screenshot">
-            <img class="postman" src="images/postman-login.png" alt="postman screenshot"></a>
-            <div class="content">
-                <h2>Overview</h2>
-                <p class="first">This is the server-side component of myflix movie app, developed using the MERN stack,<br> 
-                that provides users with access to information about movies, directors, and genres.<br> 
-                Users are able to create an account, update their personal data, and create a list of favorite movies.</p>
-                <br />
-                <h2>Purpose</h2>
-                <p>I have built myFlix project as part of my full-stack immersion course at CareerFoundry,<br> 
-                to demonstrate my mastery of full-stack JavaScript development.</p>
-                <br />
-                <h2>Objective</h2>
-                <p>The aim of the project was to have an interactive and streamlined 
-                web application where users can browse their favorite movies. </p>
-                <br />
-                <h2>Back-End</h2>
-                <p>I created a RESTful API using Node.js and Express, that interacts with a non-relational database & business logic (MongoDB & Mongoose).<br>
-                The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data from and store data in the database, CRUD methods are used.<br>
-                The API provides movie information in JSON format.<br>
-                To test the API, I used Postman. I also included Passport & JWT to authenticate and authorize the users of the app.<br>
-                And last but not least, I hosted the app's back-end API on Heroku.</p>
-                <br />
-                <br>
-                <h2 class="myflix-title">React Front-End</h2>
-                <a href="https://paulinemarg-myflix.netlify.app" target="_blank">
-                <img class="myflix" src="images/myflix.png" alt="myflix screenshot">
-                <img class="myflix" src="images/myflix2.png" alt="myflix screenshot"></a>
-                <br>
-                <p>Using React, I created seperate components for the different views of the application.<br>
-                I implemented logic to handle app requests and navigate users to different views within the app, using React-Router-development.<br>
-                Using Redux and React-Redux, I have managed the app's state and data flow by implementing the flux design pattern.<br>
-                And finally, I hosted the app's front-end client on Netlify.</p>
-                <br>
-                <br>
-                <h2 class="myflix-title">Angular Front-End</h2>
-                <a href="https://paulinemarg.github.io/myFlix-Angular-client/" target="_blank">
-                <img class="myflix" src="images/myflix4.png" alt="myflix screenshot">
-                <img class="myflix" src="images/myflix5.png" alt="myflix screenshot"></a>
-                <p>Using Angular, I created seperate components for different views of the application.<br>
-                I used Angular material to design the app and Typedoc to comment.</p>
-                <br />
-                <h2><span class="note">Developer's-Notes<span></h2>
-                <p>This was both my favorite & most challenging project, I was able to manage the technical complexity of backend,<br>
-                create my own API and master the MERN stack. Though it wasn't smooth sailing, but persistancy, hard work and the support of my Mentor & Tutor<br>
-                made it possible to conquer the obstacles.</p>
-                <br />
+<section class="case-study">
+  <h1 class="case-title">Case Study myFlix</h1>
+    <div class="grid">
+      <div class="grid__item">
+        <h2 class="case-subtitle">Tech Stack</h2></br>
+        <p>- Node.js<br>
+          - Express.js<br>
+          - REST architecture<br>
+          - MongoDB<br>
+          - Mongoose</p><br>
+        <h2 class="case-subtitle">Duration</h2><br>
+          <p> 2 months </p><br />
+          <h2 class="case-subtitle">Overview</h2></br>
+          <p>
+            This is the server-side component of myflix movie app,built with Node.js, Express.js and uses a RESTful API,
+            that provides users with access to information about movies, directors, and genres. Users are able to create an account,
+            update their personal data, and create a list of favorite movies.<br>
+            This RESTful backend serves two separate frontend clients, one built with React and Redux, the other with Angular.
+            </p>
+            <br />
+            <h2 class="case-subtitle">Objective</h2>
+            <br />
+            <p>The aim of the project was to create an interactive and enjoyable web application for movie enthusiasts
+            who enjoy reading information about different movies.<br>
+            Backend Objective: The server-side of myFlix application will ensure the users have access to information about different movies,
+            that their requests can be processed and that all necessary data can be stored.<br>
+            Frontend Objective: The client-side will create the interface users will use when making requests to and receiving responses from the server-side.</p>
             </div>
+            <div class="grid__item">
+              <img src="images/mern.png" alt="">
+            <div class="grid__item">
+              <h2 class="case-subtitle">Purpose</h2>
+              <br />
+              <p>I have built myFlix project as part of my full-stack immersion course at CareerFoundry, to demonstrate my mastery of full-stack JavaScript development.</p>
+            </div>
+            <div class="grid__item">
+              <h2 class="case-subtitle">Challenges</h2>
+            <br>
+            <p>I faced a challenge during the backend development, when I was creating NoSQL database and I had to connect to my project through mongo shell,
+            my mongoDB installed with HomeBrew installed the latest version 5.0 and to connect to mongoDB through mongo shell you have to choose mongo shell version
+            and the latest version on the website is 4.2. So I had to lower my version to 4.2 to connect but by doing so I lost all my databases (movies, genres, directors,etc..).
+            The shell version problem was solved. My database was gone, but when I heard my mentor say that my project was the best he has seen, I forgot all the obstacles I faced.</p>
+            </div>
+            </div>
+            <div class="grid__item">
+              <h2 class="case-subtitle">Structure</h2>
+              <br>
+              <p> -Backend/Server-side<br>
+                  -Frontend/Client-side (React)<br>
+                  -Frontent/Client-side (Angular)</p><br>
+              <img src="images/JWT.png" alt="">
+              <p class="pic-description">JWT authentication</p>
+            </div>
+        <div class="grid__item">
+          <h2 class="case-subtitle">Back-End</h2>
+          <br>
+          <p>
+            Using Node.js and Express.js I designed the RESTful API and tested the endpoints with Postman. I used MongoDB to create a non-relational database
+            and Mongoose to create business logic. The REST API can be accessed via commonly used HTTP methods like GET or POST. Similar methods CRUD can be used to retrieve data from and store data in a
+            non relational way. I also included Passport & JWT to authenticate and authorize the users of the app.
+            And last but not least, I hosted the app's back-end API on Heroku.
+          </p><br>
+          <p class="code">
+            <a href="https://github.com/paulinemarg/myFlix-backend">View Code</a>
+          </p><br>
+          <img src="images/get-method.png" alt="">
+          <p class="pic-description">GET method</p>
         </div>
-        <div class="case-study1" id="case2">
-            <h1>Case Study for meet-app Project</h1>
-            <a href="https://paulinemarg.github.io/meet-app/" target="_blank">
-            <img class="meet" src="images/meet1.png" alt="meet screenshot"></a>
-                <div class="content">
-                    <h2>Overview</h2>
-                    <p>This is a serveless progressive web app that allows users to view upcoming events from an integrated Google Calendar.<br>
-                    Users are able to sign in with their Google account and access the app offline</p>
-                    <br />
-                    <h2>Purpose</h2>
-                    <p>I have built meet app project as part of my full-stack immersion course at CareerFoundry,<br>
-                    to demonstrate my knowledge of both serverless architecture & PWAs.</p>
-                    <br />
-                    <h2>Structure</h2>
-                    <p>I decided to follow a test-driven development approach with this app and created test suites that included unit-testing,<br>
-                    integration-testing, and end-to-end testing. I chose to use AWS as an authorization server and implement a serverless architecture.<br>
-                    Google OAuth 2.0 is used to access the calendar API. The app passes Lighthouse PWA checklist and users are able to install the app on their browser or mobile home screen.<br>
-                    I added data visualization to provide users with an easily readable representation of the frequency of the type and location of calendar events.</p>
-                    <p>
-                    <br />
-                    <h2><span class="note">Developer's-Notes<span></h2>
-                    <p>It was interesting working with serverless architecture, PWAs and applying TDD mindset.<br>
-                    I found it very efficient the idea of testing-failing-coding-testing-passing-refactoring & repeat. </p>
-                    <br />
-                    </p>
-                </div>
+        <div class="grid__item">
+          <h2 class="case-subtitle">React Front-End</h2>
+          <br>
+          <p>
+           Using React, I created separate components for the different views of the application.<br> 
+           I implemented logic to handle app requests and navigate users to different views within the app,
+           using React-Router-Dom.<br> 
+           Using Redux and React-Redux, I have managed the app's state and data flow by implementing the flux design pattern.<br> 
+           And finally, I hosted the app's front-end client on Netlify.
+          </p><br>
+          <p class="code">
+            <a href="https://github.com/paulinemarg/myFlix-client">View Code</a>
+          </p>
         </div>
-        <div class="case-study2" id="case3">
-            <h1>Case Study for Chitter-Chatter</h1>
-            <a href="https://vimeo.com/640930826" target="_blank">
-            <img class="chat" src="images/chat1.png" alt="chat-app screenshot" title="hover Click"></a>
-                <div class="content">         
-                    <h2>Overview</h2>
-                    <p>This is a mobile chat app built with React Native and Expo that stores data with Google Firebase.<br>
-                    Users can send messages and are able to share images and location.</p>
-                    <br />
-                    <h2>Purpose</h2>
-                    <p>I have built chitter-chatter project as part of my full-stack immersion course at CareerFoundry,<br>
-                    to demonstrate my knowledge of Javascript mobile development.</p>
-                    <br />
-                    <h2>Structure</h2>
-                    <p>I implemented React Native along with Expo.io and Google Firestore to create a mobile chat application.<br>
-                    I used Android Studio in order to view the app on an Android Virtual Device to manually view and test the app.<br>
-                    Users are able exchange messages, images, and their location with help of the GiftedChat library.<br>
-                    And the app authenticates users anonymously via Google Firebase authentication and users are able to access the app while offline.</p>
-                    <br />
-                </div>
+        <div class="grid__item">
+          <img src="images/router.png" alt="">
+          <p class="pic-description">React-Router</p>
         </div>
-        <div class="case-study3" id="case4">
-            <h1>Case Study for Pokédex</h1>
-            <a href="https://paulinemarg.github.io/pokedex-app/" target="_blank">
-            <img class="pokedex" src="images/pokedex1.png" alt="pokedex screenshot"></a>
-                <div class="content">
-                    <h2>Overview</h2>
-                    <p>A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.</p>
-                    <br />
-                    <h2>Purpose</h2>
-                    <p>I have built Pokédex as the first project of my full-stack immersion course at CareerFoundry,<br>
-                    to demonstrate fully functioning Javascript web app.</p>
-                    <br />
-                    <h2>Structure</h2>
-                    <p>I have built this app as a front-end client for external public API(poké Api) that provides data <br>
-                    about Pokemon. Data is loaded via the Fetch API from and external API.<br>
-                    I used HTML, CSS, along with object-oriented JavaScript and jQuery in order to create a streamlined user interface with Bootstrap.<br>
-                    </p>
-                    <br />
-                </div>
+        <div class="grid__item">
+          <img src="images/component.png" alt="">
+          <p class="pic-description">Welcome page component</p>
         </div>
-    </div>
+        <div class="grid__item">
+          <h2 class="case-subtitle">Angular Front-End</h2>
+          <br/>
+          <p>
+          Using Angular, I created a single page, responsive movie app with routing and several interface views<br> 
+          (Welcome page, login/register, movies, genres, directors & user profile).<br>
+          I used Angular material to design the app and Typedoc to comment the codebase.<br> 
+          And I hosted the app's front-end client on gh-pages.
+          </p><br>
+            <p class="code">
+            <a href="https://github.com/paulinemarg/myFlix-Angular-client">View Code</a>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="grid__item">
+        <h2 class="case-subtitle">Developer's Note</h2>
+        <br>
+        <p>This was both my favorite & most challenging project, I was able to manage the technical complexity of backend, create my own API and master the MEAN & MERN stack.
+        I have learned that both stacks are dependable frameworks for fast & speedy front-end development resulting in light-weight Javascript apps. Yet, the foremost difference lies in the way it is designed,
+        making MEAN stack a better choice for large-scale apps and MERN stack in quicker development of smaller apps.<br>
+        The journey was not smooth, but with the support of my mentor and tutor I conquered the obstacles.<br>
+        For future projects I would use the same methods and principles in working except I would connect to mongoDB Atlas first and then create my database to prevent database loss in case of version differences.
+        </p>
+      </div>
     </section>
  <!-- footer section start -->
-    <footer class="case-footer">
-      <div class="social-media">
-					<a href="https://github.com/paulinemarg">
-						<img src="https://img.icons8.com/ios/50/000000/github--v1.png" alt="GitHub" />
-						<!-- <a href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub icon by Icons8</a> !-->
-					</a>
-					<a href="https://twitter.com/pauline_marg">
-						<img src="https://img.icons8.com/ios/50/000000/twitter-squared.png" alt="Twitter" />
-						<!-- <a href="https://icons8.com/icon/107615/twitter-squared">Twitter Squared icon by Icons8</a> !-->
-					</a>
-					<a href="https://www.linkedin.com/in/pauline-margossian-858928214/">
-						<img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="LinkedIn" />
-						<!-- <a href="https://icons8.com/icon/447/linkedin">LinkedIn icon by Icons8</a> !-->
-					</a>
-				</div>
-    </footer>
+    <footer class="page-footer">
+        <span> <span class="far fa-copyright"></span> <a href="https://github.com/paulinemarg">paulinemarg</a> 2021</span>
+	</footer>
     <script src="scripts.js"></script>
 </body>
 </html>
