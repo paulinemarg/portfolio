@@ -602,6 +602,22 @@ footer span a:hover{
 .grid__item p {
     font-size: 20px;
 }
+.mySlides, .angularSlides {
+    display: none;
+    margin: 0 auto;
+}
+.w3-button{
+    background-color: #84a5b6;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+.w3-button:hover {
+    opacity: 0.8;
+}
 .case-header {
   position: sticky;
   top: 0;
@@ -650,6 +666,44 @@ footer span a:hover{
     max-width: 500px;
     height: auto;
     box-shadow: 0px 0px 20px #4c748d;
+}
+/* Impressum */
+.impressum {
+    width: 100%;
+    justify-content: center;
+    border: 2px solid #fff;
+    padding: 2rem;
+    background-color: #4c748d;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.impressum a{
+    color: #84a5b6;
+}
+.impressum-title {
+    text-align: center;
+    font-size: 30px;
+    color:#4c748d;
+}
+.impressum-header {
+  position: sticky;
+  top: 0;
+  padding: 2em;
+  background: #4c748d;
+  border-bottom: 8px solid #84a5b6;
+  text-align: left;
+  z-index: 1;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.home-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.home-link {
+    float: left;
 }
 /* responsive media query start */
 @media (max-width: 1104px) {
