@@ -62,7 +62,7 @@ section {
 .skills,
 .contact,
 footer {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about .about-content,
@@ -112,7 +112,7 @@ section .title::after {
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -136,8 +136,8 @@ section .title::after {
 }
 
 .navbar .logo {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .navbar .logo a {
@@ -157,10 +157,10 @@ section .title::after {
 
 .navbar .menu li a {
     display: block;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -219,7 +219,7 @@ section .title::after {
     color: #4c748d;
     height: 100vh;
     background-size: cover;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home .max-width {
@@ -228,8 +228,8 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-    font-size: 27px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .home .home-content .text-2 {
@@ -239,25 +239,26 @@ section .title::after {
 }
 
 .home .home-content .text-3 {
-    font-size: 40px;
+    font-size: 27px;
     margin: 5px 0;
 }
 
 .home .home-content .text-3 span {
     color: #fff;
-    font-weight: 500;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home .home-content a {
     display: inline-block;
     background: #4c748d;
     color: #f1f1f1;
-    font-size: 25px;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     padding: 10px 16px;
     margin-top: 20px;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
@@ -273,12 +274,20 @@ section .title::after {
     color: #fff;
 }
 
+.about .title {
+    font-size: 32px;
+}
+
+.about .max-width .title h2 {
+    font-weight: 400;
+}
+
 .about .about-content .left {
     width: 45%;
 }
 
 .about .about-content .left img {
-    height: 400px;
+    height: 500px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
@@ -296,11 +305,13 @@ section .title::after {
 
 .about .about-content .right .text span {
     color: #84a5b6;
+    font-weight: 600;
 }
 
 .about .about-content .right p {
     text-align: justify;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .about .about-content .right a {
@@ -326,6 +337,11 @@ section .title::after {
     flex-direction: column;
     padding: 20px;
     background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.services .title {
+   font-size: 32px; 
 }
 
 .services .max-width .title {
@@ -372,84 +388,33 @@ section .title::after {
     color: #4c748d;
     text-align: center;
     padding-top: 35px;
+    font-size: 12px;
 }
 
 /* skills section styling */
 .skills .title {
+    font-size: 32px;
     color: #4c748d;
-}
-
-.skills .skills-content .column {
-    width: calc(50% - 30px);
 }
 
 .skills .skills-content .left .text {
     color: #4c748d;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
-    text-align: justify;
-    font-size: 22px;
+.skills .skill-content li {
+    font-weight: 300;
 }
 
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
+.skills .skills-content .right .text {
+    color: #4c748d;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-.skills .skills-content .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skills-content .right span {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #4c748d;
-}
-
-.skills-content .right .html::before {
-    width: 90%;
-}
-
-.skills-content .right .mern::before {
-    width: 85%;
-}
-
-.skills-content .right .mean::before {
-    width: 85%;
-}
-
-.skills-content .right .js::before {
-    width: 90%;
-}
-
-.skills-content .right .vue::before {
-    width: 80%;
-}
-
-.skills-content .right .library::before {
-    width: 90%;
-}
 
 /* work section styling */
 .work {
@@ -457,6 +422,7 @@ section .title::after {
 }
 
 .work .title {
+    font-size: 32px;
     color: #4c748d;
 }
 
@@ -563,6 +529,7 @@ section .title::after {
 }
 
 .contact .title {
+    font-size: 32px;
     color: #4c748d;
 }
 
@@ -599,7 +566,7 @@ section .title::after {
 
 .contact .icon-text {
     color: #4c748d;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -661,7 +628,7 @@ footer span a:hover {
 .case-body {
     background: rgb(240, 238, 238);
     color: #4c748d;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .case-study h1 {
@@ -733,7 +700,7 @@ footer span a:hover {
     border-bottom: 8px solid #84a5b6;
     text-align: left;
     z-index: 1;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home-link,
@@ -741,7 +708,7 @@ footer span a:hover {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home-link {
@@ -819,7 +786,7 @@ footer span a:hover {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home-link {
