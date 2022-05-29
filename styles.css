@@ -811,6 +811,7 @@ footer span a:hover {
     .menu-btn {
         display: block;
         z-index: 999;
+        color: #4c748d;
     }
 
     .menu-btn i.active:before {
