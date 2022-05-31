@@ -751,12 +751,8 @@ footer span a:hover {
 
 /* Impressum */
 .impressum {
-    width: 100%;
-    justify-content: center;
-    border: 2px solid #fff;
-    padding: 2rem;
-    background-color: #4c748d;
-    color: #fff;
+    background-color: #fefefe;
+    color: #333;
     text-align: center;
     font-size: 18px;
 }
@@ -768,23 +764,30 @@ footer span a:hover {
 .impressum-title {
     text-align: center;
     font-size: 30px;
-    color: #4c748d;
+    color: #333;
 }
 
 .impressum-header {
     position: sticky;
     top: 0;
     padding: 2em;
-    background: #4c748d;
-    border-bottom: 8px solid #84a5b6;
     text-align: left;
     z-index: 1;
     font-family: 'Archivo Narrow', sans-serif;
 }
 
+.impressum-header a {
+    color: #333;
+}
+
+.page-footer {
+    background-color: #fefefe;
+    color: #333
+}
+
 .home-link {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
 }
