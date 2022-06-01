@@ -28,7 +28,6 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#work" class="menu-btn">Work</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
@@ -118,147 +117,143 @@
         </div>
     </section>
 
-    <!-- skills section start 
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My Skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <ul style="list-style-type:disc" class="text">Frontend & Backend Skills</ul>
-                    <li>Interface development: HTML, CSS & Javascript</li>
-                    <li>Excellent command of semantic HTML with attention to Accessibility</li>
-                    <li>Debugging, testing under TDD mindset</li>
-                    <li>Uni testing and End-to-End testing</li>
-                    <li>Behavior-Driven and Test-Driven Development</li>
-                    <li>API building and Integration</li>
-                    <li>Management of relational (MySQL, PostgreSQL) and non-relational (MongoDB) databases</li>
-                    <li>Server Management, establishing of cloud (AWS, Heroku)
-                    <li>Applying responsive design principles</li>
-                </div>
-                <div class="column right">
-                    <ul style="list-style-type:disc" class="text">UI/UX Skills</ul>
-                    <li>User Interface</li>
-                    <li>User Research</li>
-                    <li>Usability Testing</li>
-                    <li>Varying levels of fidelity</li>
-                    <li>Rapid and interactive prototype</li>
-                    <li>Layout and visual design</li>
-                    <li>Storytelling</li>
-                    <li>Style guide</li>
-                    <li>Brand Guidelines</li>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!-- Work section start -->
+   <!-- Work section start -->
     <section class="work" id="work">
         <div class="max-width">
             <h2 class="title">My Work</h2>
-            <div class="carousel owl-carousel">
-                <!--<div class="card">
-                    <div class="box">
-                        <img src="images/weather.jpg" alt="weather-app image">
-                        <div class="text">weather-app</div>
-                        <p>A simple weather app using vue that loads data from weatherApi. A user is able to search for a city and view the weather.<br> 
-                        The background of the app changes with the weather (cold or warm).</p>
-                        <a href="https://github.com/paulinemarg/weather-app">&lt;View Code&gt;</a>
-                        <a href="https://paulinemarg-weatherapp.netlify.app">&lt;View App&gt;</a>
+            <div class="text-center">
+                <button class="tablink" onclick="openPage('Design', this, '#f1f1f1')">Design</button>
+                <button class="tablink" onclick="openPage('Develop', this, '#f1f1f1')">Development</button>
+            </div>
+            <div id="Design" class="tabcontent">
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/143244425/Project-E-commerce-app">
+                            <img src="images/gaia.png" alt="gaia-app">
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
-                <div class="card">
-                    <div class="box">
-                        <img src="images/chat.jpg" alt="chat-app image">
-                        <div class="text">chitter-chatter</div>
-                        <p>A chat app for mobile devices written in React Native & developed using Expo. 
-                        The app provides users with a chat interface and options to share images and their location.</p>
-                        <a href="https://github.com/paulinemarg/Chitter-Chatter">&lt;View Code&gt;</a>
-                        <a href="https://vimeo.com/640930826">&lt;View Demo&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/143076161/Project-Coffee-Finder-App">
+                            <img src="images/coffeefinder.png" alt="coffee-finder">
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/meet1.png" alt="meet-app image">
-                        <div class="text">meet-app</div>
-                        <p>This is a serverless, progressive web application (PWA), built using React and TDD technique. 
-                        The application uses the Google Calender API to fetch upcoming events, OAuth2 authentication flow & the serverless function is hosted by AWS.</p>
-                        <a href="https://github.com/paulinemarg/meet-app">&lt;View Code&gt;</a>
-                        <a href="https://paulinemarg.github.io/meet-app/">&lt;View App&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/143091269/Project-E-wallet-app">
+                            <img src="images/Digipay.png" alt="Digipay">
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--<div class="card">
-                    <div class="box">
-                        <img src="images/to-do-list-app.png" alt="to-do-list-app image">
-                        <br />
-                        <br />
-                        <div class="text">to-do-list-app</div>
-                        <p>A basic to-do-list-app using HTML, CSS, Javascript & jQuery.<br>
-                        A user is able to add task,<br>
-                        mark task as done and delete a task.</p>
-                        <a href="https://github.com/paulinemarg/to-do-list-app">&lt;View Code&gt;</a>
-                        <a href="https://paulinemarg.github.io/to-do-list-app/">&lt;View App&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/143119845/Project-Music-Player-app">
+                            <img src="images/soundwaves.jpg" alt="Musicplayer">
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div> !-->
-                <div class="card">
-                    <div class="box">
-                        <img src="images/pokedex.png" alt="pokedex app image">
-                        <div class="text">pokédex</div>
-                        <p>This is a small web application that uses HTML, CSS, and JavaScript.
-                        The app loads data from an external API. Users view a pokemon list & 
-                        they can click on a name to view more details about that Pokemon, or search by name in the search bar.
-                        I have designed the app using jquery & Bootstrap.</p>
-                        <a href="https://github.com/paulinemarg/pokedex-app">&lt;View Code&gt;</a>
-                        <a href="https://paulinemarg.github.io/pokedex-app/">&lt;View App&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/143045965/Project-Note-App">
+                            <img src="images/notedown.png" alt="noteapp">
+                            </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/restapi.png" alt="myFlix api image">
-                        <div class="text">myFlix-backend</div>
-                        <p>The RESTful backend built with Node.js and Express.js 
-                        serves two separate frontend clients, one built with React and Redux, the other with Angular.
-                        </p>
-                        <a href="https://github.com/paulinemarg/myFlix-backend">&lt;View Code&gt;</a>
-                        <a href="project.html">&lt;Case Study&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                            <a href="https://www.behance.net/gallery/142859875/Project-Messenger-App">
+                            <img src="images/chitterchatter.png" alt="chatapp">
+                            </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/mern.png" alt="myFlix-client image">
-                        <div class="text">myFlix-client</div>
-                        <p>A project using MERN stack.This is the client-side of my "myFlix" web application using React 
-                        based on its existing server-side code(myFlix-backend). 
-                        </p>
-                        <a href="https://github.com/paulinemarg/myFlix-client">&lt;View Code&gt;</a>
-                        <a href="https://paulinemarg-myflix.netlify.app">&lt;View App&gt;</a>
+            </div>
+            <div id="Develop" class="tabcontent">
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/chat.jpg" alt="chat-app">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/Chitter-Chatter">Code</a>
+                                <a href="https://vimeo.com/640930826">Demo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/mean.png" alt="myFlix-angular image">
-                        <div class="text">myFlix-angular-client</div>
-                        <p>A project using MEAN stack.This is the client-side of my "myFlix" web application using Angular 
-                        based on its existing server-side code(myFlix-backend). The app uses Angular material throughout as well.
-                        </p>
-                        <a href="https://github.com/paulinemarg/myFlix-Angular-client">&lt;View Code&gt;</a>
-                        <a href=" https://paulinemarg.github.io/myFlix-Angular-client/">&lt;View App&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/pokedex.jpg" alt="pokedex-app">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/pokedex-app">Code</a>
+                                <a href="https://paulinemarg.github.io/pokedex-app/">App</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/portfolio.png" alt="portfolio website image">
-                        <br />
-                        <div class="text">Portfolio Webiste</div>
-                        <p>A single-page application to showcase my professional portfolio, 
-                        designed following responsive design principles both for desktop and mobile. Built with HTML, CSS and some snippets of Javascript:
-                        sticky navbar, owl-carousel, animation-script & scroll-up.
-                        </p>
-                        <a href="https://github.com/paulinemarg/portfolio">&lt;View Code&gt;</a>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/portfolio.jpg" alt="portfolio-app">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/portfolio">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/api.jpg" alt="portfolio-app">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/myFlix-backend">Code</a>
+                                <a href="https://backend-myflix.herokuapp.com/documentation.html">Doc</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/myflixreact.jpg" alt="myflix-react">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/myFlix-client">Code</a>
+                                <a href="https://paulinemarg-myflix.netlify.app">App</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card">
+                            <div class="content_img">
+                                <img src="images/myflixangular.jpg" alt="myflix-angular">
+                                <div class="center">
+                                <a href="https://github.com/paulinemarg/myFlix-Angular-client">Code</a>
+                                <a href=" https://paulinemarg.github.io/myFlix-Angular-client/">App</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 
 
     <!-- contact section start -->

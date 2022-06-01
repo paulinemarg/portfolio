@@ -11,7 +11,7 @@ Secondary Color (light Blue): rgb(159, 187, 228);
     --secondary-color: rgb(159, 187, 228);
     --about-bg-color: rgb(56, 68, 87);
     --skills-bg-color: #fff;
-    --work-bg-color: #93b3db;
+    --work-bg-color: #fefefe;
     /* Font weight */
     --regular-weight: 400;
     --bold-weight: 600;
@@ -66,7 +66,6 @@ footer {
 }
 
 .about .about-content,
-.work .work-content,
 .skills .skills-content {
     display: flex;
     flex-wrap: wrap;
@@ -418,7 +417,7 @@ section .title::after {
 
 /* work section styling */
 .work {
-    background-color: #fff;
+    background-color: #fefefe;
 }
 
 .work .title {
@@ -426,101 +425,92 @@ section .title::after {
     color: #4c748d;
 }
 
-.work .carousel .card {
-    background-color: #4c748d;
-    color: #fff;
-    border-radius: 6px;
-    padding: 80px 65px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+.work .grid .grid__item {
+    display: inline-block;
+    width: 33%;
 }
 
-.work .carousel .card:hover {
+@supports (display: grid) {
+.work .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+  }
+}
+
+.work .grid .grid__item {
+    width: 100%;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+.work .grid .grid__item img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+
+.work .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.work .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.work .card .content_img{
+ position: relative;
+ float: left;
+ margin-right: 10px;
+}
+
+.work .card .center a {
+    color: #333;
+    background-color: #f1f1f1;
+    font-weight: 300;
+}
+
+.work .card .content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ margin-bottom: 10px;
+ margin-right: 10px;
+ gap: 15px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.work .text-center {
+  text-align: center;
+}
+
+.work button {
+    border: none;
+    background: none;
+    color: #4c748d;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 4px 2px;
     cursor: pointer;
 }
 
-.work .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    height: 420px;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+.work .card .content_img:hover{
+    cursor: pointer;
 }
 
-.work .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.work .carousel .card .text {
-    color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.work .card .box a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #4c748d;
-    transition: all 0.3s ease;
-}
-
-.work .card .box a:hover {
-    opacity: 0.8;
-    color: #84a5b6;
-}
-
-.work .projects a {
-    color: #84a5b6;
-    background-color: #4c748d;
-    font-weight: 700;
-    text-decoration: underline;
-    display: inline-block;
-    border: 2px solid #4c748d;
-    transition: all 0.3s ease;
-}
-
-.work .carousel .card img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border: 5px solid #4c748d;
-    transition: all 0.3s ease;
-}
-
-.work .carousel .card:hover img {
-    border-color: #84a5b6;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #4c748d !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: #4c748d !important;
+.work .card .content_img:hover div{
+    visibility: visible;
+    opacity: 1;
 }
 
 /* contact section styling */
@@ -622,131 +612,6 @@ footer span a {
 
 footer span a:hover {
     text-decoration: underline;
-}
-
-/* Case Study Page */
-.case-body {
-    background: rgb(240, 238, 238);
-    color: #4c748d;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.case-study h1 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.case-study .grid__item {
-    text-align: center;
-}
-
-.case-study .grid__item .case-subtitle {
-    color: #84a5b6;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.grid__item .pic-description {
-    font-size: 16px;
-    color: #000;
-}
-
-.grid__item a {
-    display: inline-block;
-    border: 1px solid #84a5b6;
-    background-color: #84a5b6;
-    color: #fff;
-}
-
-.grid__item .code:hover {
-    opacity: 0.8;
-}
-
-.grid__item img {
-    width: 200px;
-    height: 200px;
-}
-
-.grid__item p {
-    font-size: 20px;
-}
-
-.mySlides,
-.angularSlides {
-    display: none;
-    margin: 0 auto;
-}
-
-.w3-button {
-    background-color: #84a5b6;
-    color: #fff;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-}
-
-.w3-button:hover {
-    opacity: 0.8;
-}
-
-.case-header {
-    position: sticky;
-    top: 0;
-    padding: 2em;
-    background: #4c748d;
-    border-bottom: 8px solid #84a5b6;
-    text-align: left;
-    z-index: 1;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.home-link,
-.close-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.home-link {
-    float: left;
-}
-
-.close-link {
-    float: right;
-}
-
-.grid__item {
-    display: inline-block;
-    width: 33%;
-}
-
-@supports (display: grid) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        margin: 0;
-    }
-}
-
-.grid__item {
-    background-color: #4c748d;
-    color: #fff;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 20px;
-}
-
-.grid__item img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    box-shadow: 0px 0px 20px #4c748d;
 }
 
 /* Impressum */
@@ -934,19 +799,19 @@ footer span a:hover {
 
 /* Media queries */
 @media all and (max-width: 500px) {
-    .grid {
+    .work .grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
+    .work .grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media all and (max-width: 750px) {
-    .grid {
+    .work .grid {
         grid-gap: 10px;
     }
 }
