@@ -322,66 +322,6 @@ section .title::after {
     color: #333;
 }
 
-.work .flip-box {
-  width: 300px;
-  height: 180px;
-  perspective: 1000px;
-}
-
-.work .flip-box .flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.work .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.work .flip-box .flip-box-front, .flip-box-back {
-  position: absolute;
-  background-color: #333;
-  color: #fefefe;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.work .flip-box .flip-box-back {
-  transform: rotateY(180deg);
-}
-
-.work .flip-box .flip-box-back .Case-btn {
-    display: inline-block;
-    background-color: #fefefe;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 5px;
-    font-size: 14px;
-}
-
-.work .flip-box .flip-box-back .Case-btn:hover {
-    opacity: 0.8;
-}
-
-.work .flip-box .flip-box-back .back-text {
-    margin-top: 20px;
-    color: #fefefe;
-    font-size: 16px;
-}
-
-.work .flip-box .flip-box-back .back-text p{
-    font-weight: 600;
-}
-
-.work .flip-box .flip-box-back .back-text li {
-    font-weight: 300;
-}
-
 .work .grid .grid__item {
     display: inline-block;
     width: 33%;
@@ -399,23 +339,16 @@ section .title::after {
 .work .grid .grid__item {
     width: 100%;
     padding: 20px;
-    background-color: #fefefe;
+    transition: 0.3s;
 }
 
 .work .grid .grid__item img {
     width: 100%;
     max-width: 500px;
-    height: 100%;
 }
 
-.work .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.work .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.05);
+.work .grid .grid__item:hover {
+    transform: scale(1.05);
 }
 
 .work .card .content_img{
@@ -425,9 +358,13 @@ section .title::after {
 }
 
 .work .card .center a {
-    color: #333;
-    background-color: #f1f1f1;
+    color: #fefefe;
     font-weight: 300;
+    margin-inline: 5px;
+}
+
+.work .card .center a:hover {
+    color: rgb(127, 123, 123);
 }
 
 .work .card .content_img div{
@@ -462,7 +399,7 @@ section .title::after {
 }
 
 .work button:hover {
-    text-decoration: underline;
+    color: rgb(127, 123, 123);
 }
 
 .work .card .content_img:hover{
