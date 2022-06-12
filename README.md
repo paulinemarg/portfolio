@@ -12,6 +12,6 @@ A single-page application to showcase my professional portfolio, designed follow
 * Javascript
 
 ## Design
-I followed a responsive design principle both for desktop and mobile. I used mainly HTML and CSS to design my webpage, however I included some snippets of Javascript like: Owl-Carousel, Scroll-up button, sticky/toggle-navbar, text-animation.
+I followed a responsive design principle both for desktop and mobile. I used mainly HTML and CSS to design my webpage, however I included some snippets of Javascript like: Scroll-up button, sticky/toggle-navbar, text-animation and project tab.
 
 [Visit my Portfolio page](https://paulinemarg.github.io/portfolio/)
