@@ -210,7 +210,8 @@ section .title::after {
 }
 
 .home {
-    background-color: #fefefe;
+    background-color: #f1f1f1;
+    height: 100vh;
 }
 
 .home .home-content .center {
